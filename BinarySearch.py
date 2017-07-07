@@ -15,6 +15,6 @@ def find(key):
 	i = findInRange(key,numberslist,0,len(numberslist),0)
 	print "found it at position :"+ str(i[0]) +"with recursion of :" + str(i[1])
 
-find(500)
+find(999)
 
 
