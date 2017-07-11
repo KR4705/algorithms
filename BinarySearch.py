@@ -2,7 +2,7 @@ import math
 
 numberslist = range(0,1000)
 global iterations
-
+# binarysearch using recursion
 def findInRange(key,numbers,i,j,n):
 	middle=int((i+j)/2)
 	n = n+1
@@ -18,7 +18,7 @@ def find(key):
 # find(999)
 
 
-# improved binary search with while loop and less variables and used it in prime numbers
+# binary search with while loop and less variables and used it in prime numbers
 
 primes = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71]
 
