@@ -1,18 +1,20 @@
 # SelectionSort.py
+# swaps the values of two keys i and j
 def swap(array,i,j):
 	temp = array[i]
 	array[i] = array[j]
 	array[j] = temp
-
+#assuming the array is sorted till the index i, we find the
+#index of the smallest value with index greater than i
 def minIndexOfSubarray(array,i):
 	minValue = array[i]
 	minIndex = i
-	for index in range(i,len(array)): # range(n) imples 0 to n-1
+	for index in range(i,len(array)): # range(n) implies 0 to n-1
 		if array[index] < minValue:
 			minValue = array[index]
 			minIndex = index
 	return minIndex
-
+#loop over the array and for each index we find the min index of subarray and swap it with the current index.
 def selectionSort(array):
 	for index in range(len(array)): 
 		swap(array,index,minIndexOfSubarray(array,index))
