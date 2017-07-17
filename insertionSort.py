@@ -1,7 +1,7 @@
 # insertionSort.py
 
-# insert below takes an array and the index to which it is sorted 
-# and inserts the value in this sorted array
+# insert takes an array and the index to which it is sorted 
+# and inserts another the next key's value into this sorted array
 def insert(array,rightIndex,value):
 	for x in range(rightIndex +1):
 		if array[rightIndex-x] > value:
